@@ -44,6 +44,9 @@ body{
     margin: auto;
 
 }
+.info{
+    color:rgb(200, 188, 188);
+}
 
 .response {
     animation-name: popUp;
