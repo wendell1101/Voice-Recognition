@@ -34,14 +34,14 @@ recognition.onresult = function(e){
 
     const transcript = e.results[current][0].transcript;
     content.textContent = transcript;
-    readOutLoud(transcript);
+    voiceOut(transcript);
 }
 
 btn.addEventListener('click', () => {
     recognition.start();
 });
 
-function readOutLoud(message){
+function voiceOut(message){
     const speech = new SpeechSynthesisUtterance();
 
     
